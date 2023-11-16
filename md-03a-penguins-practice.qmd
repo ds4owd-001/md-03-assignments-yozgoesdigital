@@ -1,7 +1,7 @@
 ---
 title: "Data transformation with dplyr"
 subtitle: "Practice with penguins"
-author: ""
+author: "Jos"
 format:
   html:
     embed-resources: true
@@ -22,9 +22,13 @@ All exercises in this assignment use the `penguins` data as a starting point.
 
 1.  Run all code chunks above.
 2.  Run the code chunk that contains `glimpse(penguins)`.
-3.  How many variables are in the data set?
-4.  How many observations are in the data set?
-5.  What data types are contained in the variables? (Reminder: <https://ds4owd-001.github.io/website/slides/lec-02-visualisation.html#/types-of-variables>)
+3.  How many variables are in the data set?\
+    8
+4.  How many observations are in the data set?\
+    344
+5.  What data types are contained in the variables? (Reminder: <https://ds4owd-001.github.io/website/slides/lec-02-visualisation.html#/types-of-variables>)\
+    Continuous\
+    categorical
 
 ```{r}
 glimpse(penguins)
