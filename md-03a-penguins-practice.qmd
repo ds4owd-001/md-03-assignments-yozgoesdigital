@@ -39,24 +39,30 @@ glimpse(penguins)
 Use `filter()` to create a subset from `penguins` that only contains observations for Adelie penguins.
 
 ```{r}
-
+penguins |>
+  filter(species == 'Adelie')
 ```
 
 Use `filter()` to create a subset from `penguins` that only contains observations where body mass is less than or equal to 2900 g.
 
 ```{r}
+penguins |> 
+  filter(body_mass_g <= 2900 )
 
 ```
 
 Use `filter()` to create a subset from `penguins` that only contains observations for Adelie penguins with a bill length greater than 40 mm.
 
 ```{r}
-
+penguins |> 
+  filter(bill_length_mm > 40, species == 'Adelie')
 ```
 
 Use `filter()` to create a subset from `penguins` that excludes observations for chinstraps.
 
 ```{r}
+penguins |> 
+  filter(species != 'Chinstrap')
 
 ```
 
